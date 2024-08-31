@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --primary: rgb(22, 29, 111);
+  --secondary: rgb(152, 222, 217);
+  --ternary: rgb(166, 31, 31);
+  --shadow:-6px 6px 10px 3px rgba(128, 128, 128, 0.584) ;
+}
+/* header section */
+.global {
+  background-color: var(--secondary);
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.global > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* nav section */
+nav {
+  background-color: var(--primary);
+  color: white;
+}
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.link {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  background-color: white;
+  color: var(--primary);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > div {
+  border: 1px dotted var(--primary);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link li:hover,
+a:hover {
+  color: red;
+  cursor: pointer;
+}
+.link li:hover {
+  transform: scale(1.5);
+}
+
+/* Hero Section */
+.Hero {
+  background: url(../assets/Hero.jpg) center ;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Hero-Content {
+  background-color: rgba(0, 0, 0, 0.589);
+  color: white;
+  width: 400px;
+  
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Hero h1,
+p,
+hr{
+  margin: 0.5rem;
+}
+.Hero-Content hr{
+  width: 100%;
+}
+
+/* latest */
+.latest{
+  background-color: rgb(199, 255, 216);
+}
+.main{
+  display: flex;
+ 
+}
+.title{
+  color: var(--primary);
+  font-weight: 600;
+  font-size: x-large;
+  margin-bottom: 0.25rem;
+}
+.main article{
+  display: flex;
+  gap:20px;
+}
+.articles{
+  width: 65%;
+}
+article{
+  background-color: white;
+  padding: 10px 8px;
+  border-radius: 5px;
+  box-shadow:var(--shadow);
+  margin: 1rem;
+}
+.link-item{
+  margin: 1rem;
+  width: 35%;
+  background-color: blue;
+}
+.image{
+  width: 350px; 
+}
+.btn{
+  float: right;
+ background-color: var(--secondary);
+ padding: 5px 10px;
+ border-radius: 5px;
+ border: none;
+ box-shadow: var(--shadow);
+}
+.btn:hover{
+  background-color: rgb(85, 235, 225) ;
+  transform: scale(1.05);
+}
+article:hover{
+  transform: scale(1.05);
+
+}
