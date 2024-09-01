@@ -130,8 +130,9 @@ article{
 .link-item{
   margin: 1rem;
   width: 35%;
-  background-color: blue;
+
 }
+
 .image{
   width: 350px; 
 }
@@ -150,4 +151,33 @@ article{
 article:hover{
   transform: scale(1.05);
 
+}
+/* aside */
+.By-Country, .By-Date{
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+.By-Country{
+  background-color: rgba(42, 133, 42, 0.662);
+}
+.By-Date{
+  margin-top: 2rem;
+  background-color: rgba(146, 103, 23, 0.489);
+}
+.link-item li{
+padding-left: 20px;
+list-style-position: inside;
+}
+.link-item h3{
+  margin-bottom: 0.5rem;
+}
+.link-item a{
+text-decoration: none;
+color:black;
+}
+.link-item a:hover{
+  color: var(--primary)
 }
